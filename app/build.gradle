@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
 }
 
 dependencies {
@@ -26,6 +30,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
-    compile files('libs/eeg_algo/NskAlgoSdk.jar')
-    compile files('libs/eeg_algo/stream.jar')
+    compile files('libs/libStreamSDK.jar')
+    compile files('libs/NskAlgoSdk.jar')
 }

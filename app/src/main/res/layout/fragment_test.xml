@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_test_mindwave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Test page mutha fucka"
+        />
+
+    <Button
+        android:id="@+id/b_to_home"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Back to home"
+        />
+
+    <Button
+        android:id="@+id/b_connect_headset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Connect"
+        />
+
+    <Button
+        android:id="@+id/b_start_alg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="select attn"
+        />
+
+
+    <Button
+        android:id="@+id/b_canned"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="canned"
+        />
+
+
+    <Button
+        android:id="@+id/b_stop_alg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="stop alg"
+        />
+
+    <TextView
+        android:id="@+id/tv_signal_quality"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="signal quality"
+        />
+
+    <TextView
+        android:id="@+id/tv_current_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="current state"
+        />
+
+</LinearLayout>

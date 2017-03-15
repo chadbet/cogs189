@@ -5,12 +5,15 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.cogs189.chad.bci.controllers.ControllerFactory;
+import com.cogs189.chad.bci.controllers.navigation.Page;
 
 /**
  * Created by Chad on 2/27/17.
  */
 
 public class BaseActivity extends AppCompatActivity implements ServiceContainer {
+
+    protected Page page;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
