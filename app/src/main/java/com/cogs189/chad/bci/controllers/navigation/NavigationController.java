@@ -64,5 +64,9 @@ public class NavigationController {
         return currentPage;
     }
 
+    public void overrideCurrentPage(Page backToPage) {
+        currentPage = backToPage;
+    }
+
 
 }

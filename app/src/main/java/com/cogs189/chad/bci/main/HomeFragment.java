@@ -31,7 +31,7 @@ public class HomeFragment extends BaseFragment {
         openTestPageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getControllerFactory().getNavigationController().transitionToPage(getPage(), Page.MAIN_TEST);
+                getControllerFactory().getNavigationController().transitionToPage(getPage(), Page.MINDWAVE_STREAM);
             }
         });
         return rootView;

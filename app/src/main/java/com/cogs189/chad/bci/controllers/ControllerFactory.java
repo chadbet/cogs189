@@ -1,5 +1,6 @@
 package com.cogs189.chad.bci.controllers;
 
+import com.cogs189.chad.bci.controllers.mindwave.MindwaveController;
 import com.cogs189.chad.bci.controllers.navigation.NavigationController;
 
 /**
@@ -13,6 +14,7 @@ public class ControllerFactory {
     private boolean isTornDown = false;
 
     private NavigationController navigationController;
+    private MindwaveController mindwaveController;
 
     private ControllerFactory() {}
 
@@ -25,11 +27,13 @@ public class ControllerFactory {
 
     public void reset() {
         navigationController = null;
+        mindwaveController = null;
     }
 
     public void tearDown() {
         reset();
         controllerFactory = null;
+        mindwaveController = null;
         isTornDown = true;
     }
 
@@ -42,5 +46,12 @@ public class ControllerFactory {
             navigationController = new NavigationController();
         }
         return navigationController;
+    }
+
+    public MindwaveController getMindwaveController() {
+        if (mindwaveController == null) {
+            mindwaveController = new MindwaveController();
+        }
+        return mindwaveController;
     }
 }
